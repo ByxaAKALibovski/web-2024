@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-2024</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            width: 100%;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            background-color: #1d6b8f;
+            /* background-color: #fff; */
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .wrapper{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #46218b;
+            gap: 40px;
+
+            & a{
+                display: flex;
+                padding: 10px 20px;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                color: #46218b;
+                transition: 0.4s;
+
+                &:hover{
+                    background-color: #1d6b8f;
+                    color: #fff;
+                }
+
+            }
+
+        }
+
+        section{
+            width: 100%;
+            padding: 40px;
+
+            & h1{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 2em;
+            }
+
+            & h2{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            & p{
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 28px;
+                margin-bottom: 15px;
+
+                & a{
+                    color: #46d6a6;
+                    transition: 0.4s;
+
+                    &:hover{
+                        color: #46218b;
+                    }
+
+                }
+
+            }
+
+            ol{
+                max-width: 1000px;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+
+                & li{
+                    font-weight: 500;
+                    font-size: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    list-style: circle;
+                    margin-bottom: 20px;
+
+                    & a{
+                        display: flex;
+                        width: fit-content;
+                        color: #46d6a6;
+                        transition: 0.4s;
+
+                        &:hover{
+                            color: #46218b;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+
+        .one__block{
+            display: flex;
+            width: 1000px;
+            justify-content: space-around;
+        }
+
+        .one__block .item{
+            max-width: 200px;
+            width: 100%;
+            background-color: #46218b;
+            padding: 10px;
+            border-radius: 6px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+
+            & img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            & a{
+                display: flex;
+                padding: 5px 10px;
+                background-color: #46d6a6;
+                color: #000;
+            }
+
+        }
+
+        .one__block .item .text{
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <a href="#first-year">Первый год</a>
+            <a href="#second-year">Второй год</a>
+        </nav>
+        <section id="first-year">
+            <h1>Первый год</h1>
+            <h2>Задание на 02.11.2024</h2>
+            <p>На прошлом занятие мы познакомились с свойствами flex и grid в css, с помощью таких сайтов как <a target="_blank" href="https://flexboxfroggy.com/">Flexbox Froggy</a> и <a target="_blank" href="https://cssgridgarden.com/">Grid Garden</a>. Если кто то забыл или же его не было на прошлом занятие можете занового пройти задания на данных сайтах.</p>
+            <p>Сегодня мы по практикуемся со свойством flex. В инструкции к заданию у вас будут показаны варианты использования свойства flex, вам нужно будет повторить их у себя в файле. Затем будет небольшой кейс по созданию карточек товаров.</p>
+            <ol>
+                <li>
+                    1) Создайте папку для занятия. Затем в папке следует создать два текстовых файла.
+                    <br>
+                    <br>
+                    <img src="one-one.jpg" alt="">
+                </li>
+                <li>
+                    2) Затем следует изменить название и формат файлов на index.html и style.css (Если у вас не показывается формат файла, то нужно поставить галочку на пункт "Расширения имен файлоф" в вкладке "Вид" сверху папки)
+                    <br>
+                    <br>
+                    <img src="two-one.jpg" alt="">
+                </li>
+                <li>
+                    3) Откройте папку в редакторе для кода VisaulStudioCode, если у вас не установлен данный редактор, можете скачать его нажам на ссылку <a href="VSCodeUserSetup-x64-1.95.1.exe" download>скачать VisaulStudioCode</a> Или перейдите на официальный сайт и скачайте под вашу ОС <a href="https://code.visualstudio.com/">Официальный сайт</a> Далее установите его одни или попросите помочь родителей.
+                    <br>
+                    <br>
+                    <img src="tree-one.jpg" alt="">
+                </li>
+                <li>
+                    4) Далее в файле index.html нужно будет прописать разметку по умолчанию.
+                    <br>
+                    <br>
+                    <img src="four-one.jpg" alt="">
+                </li>
+                <li>
+                    5) Далее нужно подключить файл стилей в html разметку. Подключение происходит в теге head
+                    <br>
+                    <br>
+                    <img src="five-one.jpg" alt="">
+                </li>
+                <li>
+                    6) На данном шаге нужно создать разметку которая включает в себя один главный блок в котором находятся 4 его дочерних элемента.
+                    <br>
+                    <br>
+                    <img src="six-one.jpg" alt="">
+                </li>
+                <li>
+                    7) В стилях мы должны указать то что one__block будет являтся flex элементов при ширене 1000px и выравнивания элементов которые в нем содержаться по центру с помощью свойства justify-content: center;
+                    <br>
+                    <br>
+                    Далее нужно прописать ситили для элементов блока one__block, где ширину мы указываем в процентах (Если указывать ширину в процентах то элемент будет брать от родителя велечину в отношения процентов Например: родитель имеет ширину 1000px а дочерний элемент будет брать 25% ширины что составляет 250px). Так же не забудем прописать высоту height и цвет фона что бы элементы были видны background-color: ваш цвет;
+                    <br>
+                    <br>
+                    <img src="seven-one.jpg" alt="">
+                </li>
+                <li>
+                    8) В результате мы должны получить цветную полоску.
+                    <br>
+                    <br>
+                    <img src="8-one.jpg" alt="">
+                </li>
+                <li>
+                    9) Но нам нужно увидеть границу между элементами внутри one__block, это можно сделать с помощью прописания свойства margin у элемета item что явдяется внешним отступом. Или заменить значения свойства justify-content: center; на justify-content: space-around;
+                    <br>
+                    <br>
+                    <img src="9-one.jpg" alt="">
+                </li>
+                <li>
+                    10) Теперь нужно добавить дополнительную разметку в элементы с классом item
+                    <br>
+                    <br>
+                    <img src="10-one.jpg" alt="">
+                </li>
+                <li>
+                    11) После 11 шага у вас должен будет появится текст в ваших элементах если вы все сделали правильно, по умолчанию текст на сайте черного цвета, который может плохо виден на темном фоне, поэтому я прописал в силях для текста белый цвет (В данном шаге нужно самому выствить цвет текста как вам удобно)
+                    <br>
+                    <br>
+                    <img src="11.1-one.jpg" alt="">
+                    <img src="11-one.jpg" alt="">
+                </li>
+                <li>
+                    12) Далее двавайте разместим текст правом нижнем угле элемента с помощью свойств align-items и justify-content
+                    <br>
+                    <br>
+                    <img src="12.1-one.PNG" alt="">
+                    <img src="12-one.PNG" alt="">
+                </li>
+                <li>
+                    13) В итоге мы получили первичный вид карточки.
+                </li>
+                <li>
+                    14) Итоговое создание создание карточки как показано на изображении (Если задача для вас будет сложное и что то будет не получатся, то на следущем занятии мы будет заново создавать карточку с объяснением)
+                    <br>
+                    <br>
+                    <img src="card-exe.PNG" alt="">
+                </li>
+            </ol>
+        </section>
+
+    </div>
+</body>
+</html>
